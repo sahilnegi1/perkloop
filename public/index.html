@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perk Loop — Your Loyalty Deserves More | Noida • Greater Noida • NCR</title>
+<meta name="description" content="Discover local businesses, earn rewards, and get more from the places you love. Cafes, salons, restaurants, bakeries, supermarkets & retail in Noida/NCR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-inner">
+  <a class="logo" href="#" aria-label="Perk Loop home"><span class="logo-mark" aria-hidden="true">P</span><span>Perk Loop<small>Shop local • Earn rewards</small></span></a>
+  <span class="tag">Noida • Gr. Noida • NCR</span>
+  <span style="flex:1"></span>
+  <nav aria-label="Primary" style="display:flex;gap:8px;flex-wrap:wrap">
+  <a class="btn btn-ghost btn-sm" href="#discover">Discover</a>
+  <a class="btn btn-ghost btn-sm" href="#wallet">Wallet</a>
+  <a class="btn btn-ghost btn-sm" href="#merchant">For Business</a>
+  <a class="btn btn-ghost btn-sm" href="#marketing">Marketing kit</a>
+  <a class="btn btn-primary btn-sm" href="#auth" id="navAuth">Sign in</a>
+  </nav>
+</div></header>
+
+<main class="wrap" id="main">
+<!-- LANDING -->
+<section id="view-home" class="view active">
+  <div class="hero">
+    <span class="pill">India-first loyalty • Separate rewards for every business • QR-based</span>
+    <h1>Your trust matters. Your loyalty matters. <em>And you matter.</em></h1>
+    <p class="sub">Every visit deserves appreciation. Discover local businesses, earn rewards, and get more from the places you love.</p>
+    <div class="hero-cta">
+      <a class="btn btn-warm" href="#auth?role=customer">Join as a Customer</a>
+      <a class="btn btn-primary" href="#auth?role=merchant">Register Your Business</a>
+    </div>
+    <div class="trust" id="trustRow" aria-live="polite">
+      <span class="pill">Your Loyalty Deserves More</span>
+      <span class="pill">Shop Local. Earn Rewards. Come Back.</span>
+      <span class="pill" id="trustCounts">Loading live counts…</span>
+    </div>
+  </div>
+
+  <div class="card section"><h2 style="margin-top:0">How it works</h2>
+    <div class="grid c3" style="margin-top:10px">
+      <div><div class="step-num" aria-hidden="true">1</div><b>Discover</b><div class="muted">Find cafes, salons, restaurants, bakeries, supermarkets &amp; retail near you.</div></div>
+      <div><div class="step-num" aria-hidden="true">2</div><b>Scan QR</b><div class="muted">Merchant shows a one-time QR for your bill. You scan &amp; confirm. Points go to <u>that business only</u>.</div></div>
+      <div><div class="step-num" aria-hidden="true">3</div><b>Redeem</b><div class="muted">Unlock that shop's rewards. Cafe A points never work at Cafe B. Every visit counts.</div></div>
+    </div>
+  </div>
+
+  <h3>Categories</h3>
+  <div class="cat-row" id="homeCats"></div>
+  <div class="grid c2" style="margin-top:14px">
+    <div class="card"><b>For customers</b><div class="muted">One wallet, separate balances: e.g. Cafe A 120 pts • Cafe B 60 pts • Salon 3 stamps. Good businesses remember you.</div>
+      <div style="margin-top:10px"><a class="btn btn-ghost btn-sm" href="#discover">Browse businesses</a> <a class="btn btn-ghost btn-sm" href="#wallet">Open wallet</a></div></div>
+    <div class="card"><b>For local businesses</b><div class="muted">Points, visit-stamps, service-count, stars, spend-rewards & custom offers. Static outlet QR + single-use bill QR. No fake analytics — real visits, real retention.</div>
+      <div style="margin-top:10px"><a class="btn btn-ghost btn-sm" href="#merchant">Merchant dashboard</a></div></div>
+  </div>
+
+  <h2>Live businesses (real app data)</h2>
+  <div id="homeBiz" class="grid c3"></div>
+
+  <div class="card poster section" style="margin-top:18px"><h2 style="margin-top:0">Marketing kit for local shops</h2>
+    <div class="muted">Counter tent-cards, window stickers &amp; bill-QR table cards — plus our curiosity broken-heart handout (die-cut shape, not a rectangle). Inexpensive to print, easy to distribute.</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+      <a class="btn btn-warm btn-sm" href="#marketing">Open marketing kit</a>
+      <a class="btn btn-ghost btn-sm" href="/print.html" target="_blank" rel="noopener">Broken-heart print file</a>
+    </div></div>
+
+  <h3>Frequently asked questions</h3>
+  <div class="faq">
+    <details><summary>Can I use Cafe A points at Cafe B?</summary><div class="muted">No. Every business has its own balance. Display totals are informational only and never redeemable across shops.</div></details>
+    <details><summary>How do I earn?</summary><div class="muted">Merchant enters your bill, shows a one-time QR (5 min expiry). You scan while logged in and confirm. Server validates once — replays rejected.</div></details>
+    <details><summary>Do I need SMS OTP?</summary><div class="muted">Email OTP works now. SMS shows an honest “setup required” state until Twilio Verify is configured. We never fake OTP success.</div></details>
+    <details><summary>Do maps work?</summary><div class="muted">Manual addresses work today. Google Maps lights up automatically once keys are configured; otherwise a setup notice is shown.</div></details>
+    <details><summary>Is feedback mandatory?</summary><div class="muted">No. Optional stars/review after a visit. Skipping never loses rewards.</div></details>
+  </div>
+</section>
+
+<!-- MARKETING -->
+<section id="view-marketing" class="view">
+  <h2>Marketing kit</h2>
+  <div class="muted">Messaging: “Your trust matters. Your loyalty matters. And you matter.” • “Every visit deserves a little something back.” • “Shop local. Earn rewards. Come back.” • “Good businesses remember loyal customers.”</div>
+  <div class="grid c2" style="margin-top:12px">
+    <div class="card"><b>Counter &amp; window set</b><div class="muted">A5 tent card (“Scan. Earn. Come back.”), window sticker, bill-QR table card. Print on 300gsm, QR ≥ 3cm.</div></div>
+    <div class="card poster"><b>Broken-heart handout (die-cut)</b><div class="muted">Hand-sized broken-heart cut-out — not a rectangular card. Outside sparks curiosity; inside reveals the loyalty message + QR + CTA. <a href="/print.html" target="_blank" rel="noopener">Open print file &amp; instructions</a>.</div></div>
+  </div>
+</section>
+
+<!-- DISCOVER -->
+<section id="view-discover" class="view" aria-label="Discover businesses">
+  <h2>Discover businesses</h2>
+  <div class="cat-row" id="cats" role="tablist" aria-label="Categories"></div>
+  <div class="row" style="display:flex;gap:8px;margin:10px 0"><div style="flex:1"><label for="q">Search businesses</label><input id="q" placeholder="Search name, area… e.g. Sector 62" autocomplete="off"></div><div style="align-self:end"><button class="btn btn-primary" id="btnSearch">Search</button></div></div>
+  <div id="setupNote"></div>
+  <div id="bizList" class="grid c3"></div>
+  <div id="bizDetail"></div>
+</section>
+
+<!-- WALLET -->
+<section id="view-wallet" class="view">
+  <h2>My wallet</h2>
+  <div class="muted">Separate rewards for every business. Nothing is merged.</div>
+  <div id="walletBox" aria-live="polite"></div>
+  <h3>Scan a bill QR</h3>
+  <div class="card"><div class="row" style="display:flex;gap:8px;flex-wrap:wrap"><div style="flex:1;min-width:180px"><label for="scanToken">Bill QR token</label><input id="scanToken" placeholder="Paste TX-… token or scan"></div><div style="align-self:end;display:flex;gap:8px"><button class="btn btn-warm" id="btnScan">Check &amp; confirm</button><button class="btn btn-ghost" id="btnCam">Camera scan</button></div></div>
+  <div style="margin-top:8px"><video id="camVideo" playsinline muted aria-label="Camera preview for QR scanning" style="display:none;width:100%;max-width:380px;border-radius:12px;border:1px solid var(--line)"></video>
+  <div style="margin-top:8px"><label for="qrFile">Or upload a QR photo</label><input type="file" id="qrFile" accept="image/*" style="font-size:13px"><span class="muted" style="font-size:12px">No camera? Upload a QR photo.</span></div></div>
+  <div id="scanOut" style="margin-top:10px" aria-live="polite"></div></div>
+  <div id="notifBox"></div>
+  <div id="myRedemptions"></div>
+</section>
+
+<!-- AUTH -->
+<section id="view-auth" class="view">
+  <h2>Sign in / Join</h2>
+  <div class="card" style="max-width:520px">
+    <div class="row" style="display:flex;gap:8px">
+      <div style="flex:1"><label for="aRole">I am a</label><select id="aRole"><option value="customer">Customer</option><option value="merchant">Business owner</option></select></div>
+      <div style="flex:1"><label for="aChannel">Code via</label><select id="aChannel"><option value="email">Email OTP</option><option value="sms">Mobile OTP (SMS)</option></select></div>
+    </div>
+    <div class="row"><label for="aName">Name (optional)</label><input id="aName" placeholder="Your name" autocomplete="name"></div>
+    <div class="row"><label for="aId">Email or Indian mobile</label><input id="aId" placeholder="you@example.com or 9876543210" autocomplete="username"></div>
+    <div style="display:flex;gap:8px;margin-top:8px"><button class="btn btn-primary" id="btnOtp">Send code</button></div>
+    <div class="row" style="margin-top:10px"><label for="aCode">6-digit code</label><input id="aCode" inputmode="numeric" autocomplete="one-time-code" placeholder="••••••"></div>
+    <button class="btn btn-warm" id="btnVerify">Verify &amp; continue</button>
+    <div id="authOut" style="margin-top:10px" aria-live="polite"></div>
+    <div class="muted" style="font-size:13px;margin-top:8px">Email OTP is server-verified. Dev codes appear in the server terminal. SMS returns an honest setup-required state until Twilio is configured. No secrets are stored in frontend code.</div>
+  </div>
+</section>
+
+<!-- MERCHANT -->
+<section id="view-merchant" class="view">
+  <h2>Merchant dashboard</h2>
+  <div id="mBox"></div>
+</section>
+
+<!-- LEGAL -->
+<section id="view-legal" class="view"><h2 id="legalTitle">Policy</h2><div id="legalBody" class="card"></div></section>
+</main>
+
+<footer><div class="wrap" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+  <b>Perk Loop</b><span>Relationship mein loyalty ka kya mila? Yahan loyalty ka reward toh milega!</span><span style="flex:1"></span>
+  <a href="#marketing">Marketing kit</a><a href="/print.html">Print file</a><a href="#legal/privacy">Privacy</a><a href="#legal/terms">Terms</a><a href="#legal/support">Support &amp; contact</a>
+  <span id="cfgNote"></span>
+</div></footer>
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>

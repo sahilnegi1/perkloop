@@ -1,0 +1,25 @@
+{
+  "name": "perk-loop",
+  "version": "0.1.0",
+  "description": "Perk Loop — India-first loyalty rewards platform (Noida/NCR MVP)",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "NODE_ENV=development node src/server.js",
+    "migrate": "node db/migrate.js",
+    "test": "node --test tests/loyalty.test.js tests/isolation.test.js tests/staff.test.js tests/export.test.js tests/sms.test.js tests/a11y.test.js",
+    "test:e2e": "node scripts/e2e.mjs",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "qrcode": "^1.5.4",
+    "uuid": "^9.0.1"
+  }
+}

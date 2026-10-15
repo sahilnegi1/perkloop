@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" role="img" aria-label="Perk Loop broken-heart die-cut template">
+  <title>Broken-heart die-cut: cut solid, fold dashed</title>
+  <!-- CUT LINE (solid): hand-sized heart ~90mm wide at 100% -->
+  <path d="M210 330 C120 260 40 200 40 120 C40 60 90 30 140 30 C175 30 200 55 210 80 C220 55 245 30 280 30 C330 30 380 60 380 120 C380 200 300 260 210 330 Z"
+    fill="#FFF7EA" stroke="#C24300" stroke-width="3"/>
+  <!-- BREAK / FOLD (dashed perforation): zigzag down the middle -->
+  <path d="M210 80 L195 120 L222 155 L196 195 L220 235 L198 280 L210 330"
+    fill="none" stroke="#9C36B5" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <!-- OUTSIDE (left half): curiosity -->
+  <text x="120" y="150" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#211A13">Dil tootna</text>
+  <text x="120" y="174" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#211A13">normal hai…</text>
+  <text x="120" y="200" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6F6257">open from the break</text>
+  <!-- INSIDE (right half): reveal -->
+  <text x="300" y="140" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#C24300">…reward milna</text>
+  <text x="300" y="160" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#C24300">special hai!</text>
+  <text x="300" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#211A13">Every visit counts.</text>
+  <!-- QR placeholder -->
+  <rect x="262" y="200" width="76" height="76" fill="#fff" stroke="#211A13" stroke-width="2"/>
+  <text x="300" y="232" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#211A13">QR here</text>
+  <text x="300" y="248" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6F6257">outlet QR</text>
+  <text x="300" y="296" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#211A13">Perk Loop</text>
+  <text x="300" y="312" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6F6257">Shop local • Earn rewards</text>
+  <text x="210" y="362" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#9A8C7E">Cut SOLID line • Fold/tear DASHED line • 250–300gsm • ~90mm wide</text>
+</svg>

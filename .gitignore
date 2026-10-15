@@ -1,0 +1,15 @@
+# deps
+node_modules/
+
+# runtime data (never commit DBs or secrets)
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
